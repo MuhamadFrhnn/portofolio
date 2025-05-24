@@ -1,7 +1,11 @@
 import streamlit as st
 
-st.set_page_config(page_title="Hello MuhamadFrhnn", page_icon=":guardsman:", layout="wide")
-
+# Page configuration
+st.set_page_config(
+    page_title="Your Portfolio",
+    layout="wide",
+    initial_sidebar_state="collapsed"
+)
 
 # Custom CSS for header
 st.markdown("""
@@ -88,37 +92,3 @@ render_header()
 
 # Your main content goes here
 st.write("Your page content...")
-
-primary = st.get_option("theme.primaryColor")
-
-
-st.markdown("""
-<div style="max-width: 1250px; margin: auto; text-align: center;">
-    <h1>Muhamad Farhan Haidar</h1>
-    <p>Data Analyst at J&T Express with expertise in data collection, analysis, and visualization to support business decisions. 
-        Holds an engineering degree and is proficient in SQL, Python, Looker/Tableau, and Excel, with a strong foundation in statistical analysis. 
-        Experienced in collaborating with teams to identify trends, interpret data, and provide actionable insights. Demonstrates strong analytical, 
-        problem-solving, and communication skills in English and Bahasa Indonesia.</p>
-</div>
-""", unsafe_allow_html=True)
-
-
-st.sidebar.title("Navigation")
-st.sidebar.markdown("Profile")
-st.sidebar.markdown("Work Experience")
-st.sidebar.markdown("Education")
-st.sidebar.markdown("Proejcts")
-st.sidebar.markdown("Achievements")
-st.sidebar.markdown("Skills ")
-
-
-st.write("This is a simple Streamlit app to showcase my portfolio.")
-st.write("Feel free to explore the different sections of my portfolio using the sidebar.")
-
-
-# Footer
-st.markdown("""
-<div style="text-align: center; padding: 2rem; color: #666; border-top: 1px solid #333; margin-top: 3rem;">
-    <p>© 2025 MuhamadFrhnnn Portfolio. Built with ❤️ using Streamlit</p>
-</div>
-""", unsafe_allow_html=True)
